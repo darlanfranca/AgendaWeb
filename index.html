@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendeWeb - Sistema de Agendamento</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Página Inicial -->
+        <div id="home-page" class="page active">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <h1>🗓️ AgendeWeb</h1>
+                    <p class="subtitle">Agendamento Inteligente para Profissionais Autônomos</p>
+                </div>
+            </nav>
+
+            <main class="hero-section">
+                <div class="hero-content">
+                    <h2>Transforme a Forma Como Você Gerencia Agendamentos</h2>
+                    <p class="hero-subtitle">Aumente sua produtividade, reduza faltas e ofereça uma experiência impecável aos seus clientes com a plataforma de agendamento mais intuitiva do mercado</p>
+                    
+                    <div class="button-group">
+                        <button class="btn btn-primary" onclick="navigateTo('signup')">
+                            Começar Teste Gratuito
+                        </button>
+                        <button class="btn btn-secondary" onclick="navigateTo('login')">
+                            Já tenho conta
+                        </button>
+                    </div>
+
+                    <p class="hero-small-text">Nenhum cartão de crédito necessário. Configure em 5 minutos.</p>
+                </div>
+            </main>
+
+            <!-- Seção de Problemas e Soluções -->
+            <section class="problems-section">
+                <div class="problems-content">
+                    <h2>Os Desafios que Você Enfrenta</h2>
+                    <div class="problems-grid">
+                        <div class="problem-card">
+                            <div class="problem-icon">📄</div>
+                            <h3>Agenda Manual e Desorganizada</h3>
+                            <p>Planilhas, agendas de papel ou mensagens espalhadas. Nada centralizado, tudo confuso.</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-icon">😭</div>
+                            <h3>Clientes Faltando aos Agendamentos</h3>
+                            <p>Sem confirmação de horarios, clientes esquecem ou não aparecem. Receita perdida.</p>
+                        </div>
+                        <div class="problem-card">
+                            <div class="problem-icon">⏳</div>
+                            <h3>Tempo Gasto em Comunicação</h3>
+                            <p>Horas respondendo mensagens, confirmando horarios e resolvendo conflitos de agenda.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Beneficios -->
+            <section class="benefits-section">
+                <div class="benefits-content">
+                    <h2>Por Que Escolher AgendeWeb</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-number">1</div>
+                            <h3>Agendamento Inteligente</h3>
+                            <p>Seus clientes agendam em segundos, 24/7. Sem ligações, sem emails, sem confusão. Eles veem exatamente quais horários estão disponíveis e confirmam na hora.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-number">2</div>
+                            <h3>Controle Total da Sua Agenda</h3>
+                            <p>Defina seus horários de trabalho, duracão dos atendimentos e dias de folga. O sistema faz o resto automaticamente, bloqueando horários já agendados.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-number">3</div>
+                            <h3>Relatórios e Insights</h3>
+                            <p>Acompanhe métricas importantes: agendamentos concluídos, cancelados, taxa de não-comparecer e receita potencial. Tome decisões baseadas em dados.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-number">4</div>
+                            <h3>Sem Complicações Técnicas</h3>
+                            <p>Não precisa de conhecimento técnico. Comece a usar em minutos. Interface simples, intuitiva e acessível de qualquer dispositivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Funcionalidades -->
+            <section class="features-section">
+                <div class="features-content">
+                    <h2>Tudo o Que Você Precisa</h2>
+                    <div class="features-grid-new">
+                        <div class="feature-card-new">
+                            <div class="feature-icon-new">📅</div>
+                            <h3>Agenda Centralizada</h3>
+                            <p>Visualize todos os seus agendamentos em um só lugar. Sem perder informações, sem conflitos de horário.</p>
+                        </div>
+                        <div class="feature-card-new">
+                            <div class="feature-icon-new">💰</div>
+                            <h3>Rastreamento de Receita</h3>
+                            <p>Saiba exatamente quanto está ganhando. Acompanhe receita por período e tome decisões estratégicas.</p>
+                        </div>
+                        <div class="feature-card-new">
+                            <div class="feature-icon-new">📱</div>
+                            <h3>Móvel e Desktop</h3>
+                            <p>Acesse de qualquer lugar, em qualquer dispositivo. Seu negócio não para.</p>
+                        </div>
+                        <div class="feature-card-new">
+                            <div class="feature-icon-new">⚡</div>
+                            <h3>Fácil de Usar</h3>
+                            <p>Design intuitivo. Nenhuma curva de aprendizado. Seus clientes e você aprendem em minutos.</p>
+                        </div>
+                        <div class="feature-card-new">
+                            <div class="feature-icon-new">🔒</div>
+                            <h3>Seguro e Confiável</h3>
+                            <p>Seus dados estão protegidos. Nenhuma perda de informações. Sistema robusto e estável.</p>
+                        </div>
+                        <div class="feature-card-new">
+                            <div class="feature-icon-new">🌟</div>
+                            <h3>Agendamento sem Cadastro</h3>
+                            <p>Clientes podem agendar sem criar conta. Menos burocracia, mais conversões.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de CTA Final -->
+            <section class="cta-final-section">
+                <div class="cta-final-content">
+                    <h2>Pronto para Revolucionar Sua Agenda?</h2>
+                    <p>Junte-se a profissionais que já estão economizando tempo e aumentando receita com AgendeWeb.</p>
+                    <div class="button-group">
+                        <button class="btn btn-primary btn-large" onclick="navigateTo('signup')">
+                            Começar Agora - É Grátis
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Página de Login -->
+        <div id="login-page" class="page">
+            <nav class="navbar">
+                <button class="btn-back" onclick="navigateTo('home')">← Voltar</button>
+                <h1>AgendeWeb</h1>
+            </nav>
+
+            <main class="form-container">
+                <div class="form-card">
+                    <h2>Entrar</h2>
+                    <form id="login-form" onsubmit="handleLogin(event)">
+                        <div class="form-group">
+                            <label for="login-email">Email ou Usuário</label>
+                            <input type="text" id="login-email" placeholder="seu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Senha</label>
+                            <input type="password" id="login-password" placeholder="Sua senha" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-type">Tipo de Conta</label>
+                            <select id="login-type" required>
+                                <option value="">Selecione...</option>
+                                <option value="cliente">Cliente</option>
+                                <option value="profissional">Profissional</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                    </form>
+
+                    <p class="form-footer">
+                        Não tem conta? <a href="#" onclick="navigateTo('signup'); return false;">Criar conta</a>
+                    </p>
+
+                    <div class="demo-section">
+                        <p><strong>Demo:</strong> Use para testar</p>
+                        <p>Cliente: demo@cliente.com / 123456</p>
+                        <p>Profissional: demo@prof.com / 123456</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Página de Cadastro -->
+        <div id="signup-page" class="page">
+            <nav class="navbar">
+                <button class="btn-back" onclick="navigateTo('home')">← Voltar</button>
+                <h1>AgendeWeb</h1>
+            </nav>
+
+            <main class="form-container">
+                <div class="form-card">
+                    <h2>Criar Conta</h2>
+                    <form id="signup-form" onsubmit="handleSignup(event)">
+                        <div class="form-group">
+                            <label for="signup-name">Nome Completo</label>
+                            <input type="text" id="signup-name" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-email">Email</label>
+                            <input type="email" id="signup-email" placeholder="seu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-phone">Telefone</label>
+                            <input type="tel" id="signup-phone" placeholder="(11) 99999-9999" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password">Senha</label>
+                            <input type="password" id="signup-password" placeholder="Mínimo 6 caracteres" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-type">Tipo de Conta</label>
+                            <select id="signup-type" required>
+                                <option value="">Selecione...</option>
+                                <option value="cliente">Cliente</option>
+                                <option value="profissional">Profissional</option>
+                            </select>
+                        </div>
+
+                        <div id="professional-fields" style="display: none;">
+                            <div class="form-group">
+                                <label for="signup-profession">Profissão</label>
+                                <input type="text" id="signup-profession" placeholder="Ex: Cabeleireiro, Dentista">
+                            </div>
+                            <div class="form-group">
+                                <label for="signup-bio">Descrição (opcional)</label>
+                                <textarea id="signup-bio" placeholder="Fale sobre seus serviços"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Criar Conta</button>
+                    </form>
+
+                    <p class="form-footer">
+                        Já tem conta? <a href="#" onclick="navigateTo('login'); return false;">Entrar</a>
+                    </p>
+                </div>
+            </main>
+        </div>
+
+        <!-- Página do Cliente -->
+        <div id="client-page" class="page">
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <button class="btn-back" onclick="handleLogout()">← Sair</button>
+                    <h1>AgendeWeb</h1>
+                </div>
+                <div class="navbar-right">
+                    <span id="client-name">Cliente</span>
+                </div>
+            </nav>
+
+            <main class="main-content">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="switchTab('schedule-tab')">Agendar</button>
+                    <button class="tab-btn" onclick="switchTab('my-bookings-tab')">Meus Agendamentos</button>
+                </div>
+
+                <!-- Aba de Agendamento -->
+                <div id="schedule-tab" class="tab-content active">
+                    <div class="schedule-container">
+                        <h2>Selecione um Profissional</h2>
+                        <div id="professionals-list" class="professionals-grid">
+                            <!-- Profissionais serão carregados aqui -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aba de Meus Agendamentos -->
+                <div id="my-bookings-tab" class="tab-content">
+                    <div class="bookings-container">
+                        <h2>Meus Agendamentos</h2>
+                        <div id="client-bookings" class="bookings-list">
+                            <!-- Agendamentos do cliente serão carregados aqui -->
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Página de Seleção de Horário -->
+        <div id="booking-page" class="page">
+            <nav class="navbar">
+                <button class="btn-back" onclick="navigateTo('client')">← Voltar</button>
+                <h1>Agendar Horário</h1>
+            </nav>
+
+            <main class="main-content">
+                <div class="booking-container">
+                    <div class="professional-info">
+                        <h2 id="booking-prof-name">Profissional</h2>
+                        <p id="booking-prof-profession">Profissão</p>
+                        <p id="booking-prof-bio">Descrição</p>
+                    </div>
+
+                    <div class="booking-form">
+                        <div class="form-group">
+                            <label for="booking-date">Data</label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Horários Disponíveis</label>
+                            <div id="available-times" class="time-grid">
+                                <!-- Horários disponíveis serão carregados aqui -->
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="selected-time">
+
+                        <div class="form-group">
+                            <label for="booking-notes">Observações (opcional)</label>
+                            <textarea id="booking-notes" placeholder="Deixe uma mensagem para o profissional"></textarea>
+                        </div>
+
+                        <button class="btn btn-primary btn-block" onclick="confirmBooking()">Confirmar Agendamento</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Página do Profissional -->
+        <div id="professional-page" class="page">
+            <nav class="navbar">
+                <div class="navbar-left">
+                    <button class="btn-back" onclick="handleLogout()">← Sair</button>
+                    <h1>AgendeWeb</h1>
+                </div>
+                <div class="navbar-right">
+                    <span id="professional-name">Profissional</span>
+                </div>
+            </nav>
+
+            <main class="main-content">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="switchTab('availability-tab')">Disponibilidade</button>
+                    <button class="tab-btn" onclick="switchTab('schedule-prof-tab')">Minha Agenda</button>
+                    <button class="tab-btn" onclick="switchTab('reports-tab')">Relatórios</button>
+                </div>
+
+                <!-- Aba de Disponibilidade -->
+                <div id="availability-tab" class="tab-content active">
+                    <div class="availability-container">
+                        <h2>Configurar Horários Disponíveis</h2>
+                        <form id="availability-form" onsubmit="handleAvailability(event)">
+                            <div class="form-group">
+                                <label for="start-time">Horário de Início</label>
+                                <input type="time" id="start-time" value="08:00" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="end-time">Horário de Término</label>
+                                <input type="time" id="end-time" value="18:00" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interval">Duração do Atendimento (minutos)</label>
+                                <input type="number" id="interval" value="50" min="15" max="120" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Salvar Disponibilidade</button>
+                        </form>
+
+                        <div class="availability-info">
+                            <h3>Sua Disponibilidade Atual</h3>
+                            <div id="current-availability" class="info-box">
+                                <!-- Disponibilidade atual será exibida aqui -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aba de Agenda -->
+                <div id="schedule-prof-tab" class="tab-content">
+                    <div class="agenda-container">
+                        <h2>Minha Agenda</h2>
+                        <div class="agenda-filters">
+                            <input type="date" id="agenda-date-filter" onchange="filterAgenda()">
+                            <button class="btn btn-secondary" onclick="clearDateFilter()">Limpar Filtro</button>
+                        </div>
+                        <div id="professional-bookings" class="bookings-list">
+                            <!-- Agendamentos do profissional serão carregados aqui -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aba de Relatorios -->
+                <div id="reports-tab" class="tab-content">
+                    <div class="reports-container">
+                        <h2>Relatorios de Desempenho</h2>
+                        
+                        <!-- Filtros de Periodo -->
+                        <div class="reports-filters">
+                            <div class="filter-group">
+                                <label for="report-start-date">Data Inicio</label>
+                                <input type="date" id="report-start-date" onchange="loadReports()">
+                            </div>
+                            <div class="filter-group">
+                                <label for="report-end-date">Data Fim</label>
+                                <input type="date" id="report-end-date" onchange="loadReports()">
+                            </div>
+                            <button class="btn btn-secondary" onclick="clearReportFilters()">Limpar Filtros</button>
+                        </div>
+
+                        <!-- KPIs Principais -->
+                        <div class="kpi-grid">
+                            <div class="kpi-card">
+                                <div class="kpi-icon">📅</div>
+                                <div class="kpi-content">
+                                    <div class="kpi-label">Agendamentos Concluidos</div>
+                                    <div class="kpi-value" id="completed-bookings">0</div>
+                                </div>
+                            </div>
+                            <div class="kpi-card">
+                                <div class="kpi-icon">❌</div>
+                                <div class="kpi-content">
+                                    <div class="kpi-label">Agendamentos Cancelados</div>
+                                    <div class="kpi-value" id="cancelled-bookings">0</div>
+                                </div>
+                            </div>
+                            <div class="kpi-card">
+                                <div class="kpi-icon">📊</div>
+                                <div class="kpi-content">
+                                    <div class="kpi-label">Taxa de Conclusao</div>
+                                    <div class="kpi-value" id="completion-rate">0%</div>
+                                </div>
+                            </div>
+                            <div class="kpi-card">
+                                <div class="kpi-icon">💰</div>
+                                <div class="kpi-content">
+                                    <div class="kpi-label">Receita Potencial</div>
+                                    <div class="kpi-value" id="potential-revenue">R$ 0,00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resumo de Receita -->
+                        <div class="report-section">
+                            <h3>Resumo de Receita</h3>
+                            <div class="revenue-summary">
+                                <div class="revenue-item">
+                                    <span class="revenue-label">Ganho Medio por Agendamento</span>
+                                    <span class="revenue-value" id="avg-revenue">R$ 0,00</span>
+                                </div>
+                                <div class="revenue-item">
+                                    <span class="revenue-label">Receita Total (Periodo)</span>
+                                    <span class="revenue-value" id="total-revenue">R$ 0,00</span>
+                                </div>
+                                <div class="revenue-item">
+                                    <span class="revenue-label">Receita Media Mensal</span>
+                                    <span class="revenue-value" id="monthly-revenue">R$ 0,00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tabela de Agendamentos -->
+                        <div class="report-section">
+                            <h3>Detalhes dos Agendamentos</h3>
+                            <div id="bookings-table" class="bookings-table-container">
+                                <!-- Tabela sera carregada aqui -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Página de Agendamento como Convidado -->
+        <div id="guest-booking-page" class="page">
+            <nav class="navbar">
+                <button class="btn-back" onclick="navigateTo('home')">← Voltar</button>
+                <h1>Agendar como Convidado</h1>
+            </nav>
+
+            <main class="main-content">
+                <div class="booking-container">
+                    <div class="guest-info">
+                        <h2>Agendamento Rápido</h2>
+                        <p>Agende sem criar uma conta</p>
+                    </div>
+
+                    <div class="booking-form">
+                        <div class="form-group">
+                            <label for="guest-name">Nome Completo</label>
+                            <input type="text" id="guest-name" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guest-phone">Telefone</label>
+                            <input type="tel" id="guest-phone" placeholder="(11) 99999-9999" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guest-email">Email (opcional)</label>
+                            <input type="email" id="guest-email" placeholder="seu@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guest-professional">Selecione um Profissional</label>
+                            <select id="guest-professional" required onchange="loadGuestAvailableTimes()">
+                                <option value="">Escolha um profissional...</option>
+                                <!-- Profissionais serão carregados aqui -->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guest-date">Data</label>
+                            <input type="date" id="guest-date" required onchange="loadGuestAvailableTimes()">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Horários Disponíveis</label>
+                            <div id="guest-available-times" class="time-grid">
+                                <!-- Horários disponíveis serão carregados aqui -->
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="guest-selected-time">
+
+                        <div class="form-group">
+                            <label for="guest-notes">Observações (opcional)</label>
+                            <textarea id="guest-notes" placeholder="Deixe uma mensagem para o profissional"></textarea>
+                        </div>
+
+                        <button class="btn btn-primary btn-block" onclick="confirmGuestBooking()">Confirmar Agendamento</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
